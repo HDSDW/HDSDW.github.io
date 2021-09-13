@@ -1,80 +1,41 @@
 @charset "utf-8";
 /* CSS Document */
 /*布局*/
-body {
-  display: grid;
-  grid-template-columns: 20% 80%;
-  grid-template-rows: 5vw 2vw 60vw 5vw;
-  grid-gap: 1em;
-}
 
-header,
-footer {
-  grid-column: 1 / span 2;
+html, body {
+  font-size: 1.5em;
+	font-family: sans-serif;
+  text-align: center;
 }
-#top{
-	grid-column: 1 / span 2;
-	background: #eaeaea;
-    display: grid;
-	grid-template-columns: 25% 25% 25% 25%;
-	align-items: center;
-  	justify-items: center;
-	
-    
-}
-
-
-/* Demo Specific Styles */
-body {
-  margin: 0 auto;
-  max-width: 70em;
-  padding: 1em 0;
-}
-
-header,
-aside,
-footer {
-  background: #eaeaea;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 table {
-	font-size: 18px;
+  line-height: 1.6;
+	text-align: center;
+  font-size: 100%;
 }
-a {text-decoration:none;}
-/*下划线阴影*/
-.t1 {
-  display: inline-block;
-  vertical-align: middle;
-  width: 100%;
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  position: relative;
-  overflow: hidden;
-	height: 100%;
 
+.wikitable > caption {
+	font-weight: bold;
 }
-.t1:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background:#BD1A1D;
-  height: 4px;
- 
-  transform: translateY(4px);
- 
-  transition-property: transform;
-  
-  transition-duration: 0.1s;
- 
-  transition-timing-function: ease-out;
+.wikitable {
+	background-color: #f8f9fa;
+	color: #202122;
+	border: 1px solid #a2a9b1;
+	border-collapse: collapse;
 }
-.t1:hover:before, .t1:focus:before, .t1:active:before {
-  
-  transform: translateY(0);
+.wikitable > tr > th, .wikitable > tr > td, .wikitable > * > tr > th, .wikitable > * > tr > td {
+	border: 1px solid #a2a9b1;
+	padding: 0.2em 0.4em;
+}
+.wikitable > tr > th, .wikitable > * > tr > th {
+	background-color: #eaecf0;
+	text-align: center;
+}
+.wikitable > tr > th, .wikitable > tr > td, .wikitable > * > tr > th, .wikitable > * > tr > td {
+	border: 1px solid #a2a9b1;
+	padding: 0.2em 0.4em;
+}
+a {
+	text-decoration: none;
+	color: #0645ad;
+	background: none;
 }
