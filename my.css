@@ -2,23 +2,24 @@
 /* CSS Document */
 /*布局*/
 
-html, body {
-  font-size: 1.5em;
+html, p {
+  	font-size: 1.5em;
 	font-family: sans-serif;
-  text-align: center;
+	background-color: black;
+	color: white;
 }
 table {
-  line-height: 1.6;
+  	line-height: 1.6;
 	text-align: center;
-  font-size: 100%;
+  	font-size: 100%;
+	background-color: black;
+	color: white;
 }
 
 .wikitable > caption {
 	font-weight: bold;
 }
 .wikitable {
-	background-color: #f8f9fa;
-	color: #202122;
 	border: 1px solid #a2a9b1;
 	border-collapse: collapse;
 }
@@ -27,15 +28,9 @@ table {
 	padding: 0.2em 0.4em;
 }
 .wikitable > tr > th, .wikitable > * > tr > th {
-	background-color: #eaecf0;
 	text-align: center;
 }
 .wikitable > tr > th, .wikitable > tr > td, .wikitable > * > tr > th, .wikitable > * > tr > td {
 	border: 1px solid #a2a9b1;
 	padding: 0.2em 0.4em;
-}
-a {
-	text-decoration: none;
-	color: #0645ad;
-	background: none;
 }
